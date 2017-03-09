@@ -3,6 +3,7 @@ rm -rf /opt/js-node$(date +%Y%m%d)
 mv -f /opt/node /opt/js-node$(date +%Y%m%d)
 unzip -q /opt/node.zip -d /opt/node
 mv -f /opt/node*/ /opt/node
+cp -R /opt/js-node$(date +%Y%m%d)/bin/npm /opt/node/bin/
 chmod -R 655 /opt/node
 /opt/node/bin/node -v
 node -v
