@@ -10,6 +10,7 @@ mv /opt/tmp-node/share /opt/node
 rm -rf /opt/tmp-node /opt/node/bin/npm
 cd /opt/node/bin
 ln -s ../lib/node_modules/npm/bin/npm-cli.js npm
+cd ~
 chmod -R 655 /opt/node
 /opt/node/bin/node -v
 node -v
