@@ -3,8 +3,8 @@ pm2 stop all
 rm -rf /opt/js-node$(date +%Y%m%d)
 cp -r /opt/node /opt/js-node$(date +%Y%m%d)
 unzip -q /opt/node.zip -d /opt/tmp-node
-rm -rf /opt/node/include /opt/node/share /opt/node/bin
-mv /opt/tmp-node/bin /opt/node
+rm -rf /opt/node/include /opt/node/share /opt/node/bin/node
+mv /opt/tmp-node/bin/node /opt/node/bin
 mv /opt/tmp-node/include /opt/node
 mv /opt/tmp-node/share /opt/node
 rm -rf /opt/tmp-node /opt/node/bin/npm
