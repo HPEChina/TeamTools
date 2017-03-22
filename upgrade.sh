@@ -7,10 +7,7 @@ rm -rf /opt/node/include /opt/node/share /opt/node/bin/node
 mv /opt/tmp-node/bin/node /opt/node/bin
 mv /opt/tmp-node/include /opt/node
 mv /opt/tmp-node/share /opt/node
-rm -rf /opt/tmp-node /opt/node/bin/npm
-cd /opt/node/bin
-ln -s ../lib/node_modules/npm/bin/npm-cli.js npm
-cd ~
+rm -rf /opt/tmp-node
 chmod -R 655 /opt/node
 /opt/node/bin/node -v
 node -v
