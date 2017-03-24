@@ -1,3 +1,4 @@
+echo "sed -i 's/\r//' /opt/upgrade.sh"
 cd ~
 pm2 stop all
 rm -rf /opt/js-node$(date +%Y%m%d)
